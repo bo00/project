@@ -1,6 +1,6 @@
 - name: Demo debugger play
   hosts: localhost
-  debugger: never
+  debugger: on_skipped
   vars:
     run_task: false
   tasks:
