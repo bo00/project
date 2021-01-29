@@ -4,7 +4,7 @@
     - localhost
   vars:
     api: https://jsonplaceholder.typicode.com/posts
-    find_title: "json[?id=='{{ id }}'].title"
+    find_title: "json[?id==`{{ id }}`].title"
   vars_prompt:
     name: id
     prompt: Enter the id number of the post title to print
