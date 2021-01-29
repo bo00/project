@@ -30,4 +30,4 @@
 
     - name: Use the jsonquery filter to extract the specific piece of data we want from the returned object
       debug:
-        msg: "The title of the post with the id {{ id }} is {{ posts | json_query(find_title) | first }}" # result was empty so 'first' threw an error
+        msg: "The title of the post with the id {{ id }} is {{ posts | json_query(find_title) | first }}" # result was empty so 'first' threw an error, fixed using backticks in 'find_title'
